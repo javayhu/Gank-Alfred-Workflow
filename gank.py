@@ -10,7 +10,8 @@ ICON_DEFAULT = 'icon.png'
 
 def search(query):
     # search the ganks from gank.io
-    url = 'http://ganks-for-gankio.herokuapp.com//search'
+    # http://ganks-for-gankio.herokuapp.com//search
+    url = 'http://ganhuo.herokuapp.com//search'
     params = dict(keyword=query)
     r = web.post(url, params)
 
@@ -50,7 +51,17 @@ def main(wf):
 if __name__ == '__main__':
     # Create a global `Workflow` object
     wf = Workflow()
+
+    wf = Workflow(update_settings={
+        'github_slug': 'hujiaweibujidao/Gank-Alfred-Workflow',
+        'frequency': 7
+    })
+
     # Call your entry function via `Workflow.run()` to enable its helper
     # functions, like exception catching, ARGV normalization, magic
     # arguments etc.
     sys.exit(wf.run(main))
+
+    if wf.update_available:
+        wf.start_update()
+        
