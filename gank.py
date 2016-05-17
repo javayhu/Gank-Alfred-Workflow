@@ -10,8 +10,8 @@ ICON_DEFAULT = 'icon.png'
 
 def search(query):
     # search the ganks from gank.io
-    # http://ganks-for-gankio.herokuapp.com//search
-    url = 'http://ganhuo.herokuapp.com//search'
+    url = 'http://gankio.herokuapp.com/search'
+    # url = 'http://ganhuo.herokuapp.com/search'
     params = dict(keyword=query)
     r = web.post(url, params)
 
@@ -64,4 +64,4 @@ if __name__ == '__main__':
 
     if wf.update_available:
         wf.start_update()
-        
+
