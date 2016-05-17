@@ -5,11 +5,15 @@
 
 #### 0.使用方式
 
-[下载最新版本的workflow文件双击使用Alfred打开即可](https://github.com/hujiaweibujidao/Gank-Alfred-Workflow/releases)，**使用前提是Alfred Workflow开启了Powerpack功能。**
+[下载最新版本的workflow文件双击使用Alfred打开即可](https://github.com/hujiaweibujidao/Gank-Alfred-Workflow/releases)，workflow也已提交到[Packal](http://www.packal.org/workflow/gank-alfred-workflow)。
+
+**使用前提是Alfred Workflow开启了Powerpack功能。**
 
 搜索操作的触发词是`gk` （short for `gank`）
 
 ![img](search1.png)
+
+
 
 #### 1.项目起因
 
