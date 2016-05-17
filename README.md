@@ -65,7 +65,7 @@
 
 #### 5.开发后记
 
-很显然，如果我们的后台有更多的干货的话，就能不断增强这个Alfred Workflow的搜索体验（这还不是为了远离百毒嘛😓）。这个相关的开发也是我目前还在做的另一个项目[GankHub]()，从名字中可以看出这是要做一个增强版的`干货集中营`，其中的数据既包含了[gank.io](http://gank.io)中的数据，还包含了我的另一个项目[Ganks-for-andoirdweekly.net](https://github.com/hujiaweibujidao/Ganks-for-andoirdweekly.net)，爬取和解析Android开发周报中的干货数据。
+很显然，如果我们的后台有更多的干货的话，就能不断增强这个Alfred Workflow的搜索体验（这还不是为了远离百毒嘛😓）。这个相关的开发也是我目前还在做的另一个项目[GankHub]()，从名字中可以看出这是要做一个增强版的`干货集中营`，其中的数据既包含了[gank.io](http://gank.io)中的数据，还包含了Android开发周报中的干货数据，这正是我的另一个项目[Ganks-for-andoirdweekly.net](https://github.com/hujiaweibujidao/Ganks-for-andoirdweekly.net)做的事情。
 
 还有一个棘手的问题是，**如何及时处理后台干货数据的更新？** Heroku的定时任务要收费！
 
