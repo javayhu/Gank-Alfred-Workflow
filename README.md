@@ -5,7 +5,7 @@
 
 #### 0.使用方式
 
-[下载最新版本的workflow文件双击使用Alfred打开即可](https://github.com/hujiaweibujidao/Gank-Alfred-Workflow/releases)，workflow也已提交到[Packal](http://www.packal.org/workflow/gank-alfred-workflow)。
+[下载最新版本的workflow文件双击使用Alfred打开即可](https://github.com/hujiaweibujidao/Gank-Alfred-Workflow/releases)，workflow也已经提交到[Packal](http://www.packal.org/workflow/gank-alfred-workflow)。
 
 **使用前提是Alfred Workflow开启了Powerpack功能。**
 
@@ -43,11 +43,11 @@
 
 ![img](gankio.png)
 
-网站[http://gankio.herokuapp.com/](http://gankio.herokuapp.com/)提供的搜索接口如下图所示，发送post请求到`http://gankio.herokuapp.com/search`，请求体放参数为`keyword`的搜索关键词即可。
+网站[http://gankio.herokuapp.com/](http://gankio.herokuapp.com/)提供的搜索接口如下图所示，发送post请求到`http://gankio.herokuapp.com/search`，请求体放参数为`keyword`的搜索关键词即可。**这个接口大家都可以调用的哟，赶紧试试吧！** 
 
 ![img](gankio-heroku-search.png)
 
-**任何工具都可以测试该接口，只是目前我的Heroku账号处于free plan，所以应用每24个小时会有几个小时处于停止状态，所以祝你好运！** 🙈🙈🙈
+**任何工具都可以测试该接口，只是目前我的Heroku账号处于free plan，所以应用某些时候会处于暂停服务状态，所以祝你好运！** 🙈🙈🙈
 
 ##### （2）Gank Alfred Workflow
 
@@ -69,7 +69,7 @@
 
 #### 5.开发后记
 
-很显然，如果我们的后台有更多的干货的话，就能不断增强这个Alfred Workflow的搜索体验（这还不是为了远离百毒嘛😓）。这个相关的开发也是我目前还在做的另一个项目[GankHub]()，从名字中可以看出这是要做一个增强版的`干货集中营`，其中的数据既包含了[gank.io](http://gank.io)中的数据，还包含了Android开发周报中的干货数据，这正是我的另一个项目[Ganks-for-andoirdweekly.net](https://github.com/hujiaweibujidao/Ganks-for-andoirdweekly.net)做的事情。还有一个棘手的问题是，**如何及时处理后台干货数据的更新？** Heroku的定时任务要收费！
+很显然，如果我们的后台有更多的干货的话，就能不断增强这个Alfred Workflow的搜索体验（这还不是为了远离百毒嘛😓）。这个相关的开发也是我目前还在做的另一个项目[GankHub](https://github.com/hujiaweibujidao/GankHub)，从名字中可以看出这是要做一个增强版的`干货集中营`，其中的数据既包含了[gank.io](http://gank.io)中的数据，还包含了Android开发周报中的干货数据 (我的另一个项目[Ganks-for-andoirdweekly.net](https://github.com/hujiaweibujidao/Ganks-for-andoirdweekly.net)做的事情)。还有一个棘手的问题是，**如何及时处理后台干货数据的更新？** Heroku的定时任务要收费！
 
 如果你对我的开发工作感兴趣的话记得在Github上Follow我哟，或者关注[我的博客](http://hujiaweibujidao.github.io/)。
 
