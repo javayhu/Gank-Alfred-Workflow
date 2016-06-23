@@ -21,8 +21,8 @@ def today():
     import datetime
     now = datetime.datetime.now()
     # load today ganks from gank.io
-    # url = 'http://gank.io/api/day/' + now.strftime("%Y/%m/%d")
-    url = 'http://gank.io/api/day/2016/06/22'
+    url = 'http://gank.io/api/day/' + now.strftime("%Y/%m/%d")
+    # url = 'http://gank.io/api/day/2016/06/22'
     r = web.get(url)
 
     # throw an error if request failed, Workflow will catch this and show it to the user
@@ -131,12 +131,15 @@ def main(wf):
         def wrapper():
             return search(query)
         ganks = wf.cached_data(query, wrapper, max_age=600)
-        # ganks = search(query)
+        if len(ganks) <= 0:
+            wf.add_item(title=u'没有搜索到干货', valid=True, icon=ICON_DEFAULT)
     else:
         # Load today ganks or load from cached data, cache for 1 min
         ganks = wf.cached_data('today', today, max_age=60)
-        # add result items to workflow
-    
+        if len(ganks) <= 0:
+            wf.add_item(title=u'今天还没发干货', valid=True, icon=ICON_DEFAULT)
+        
+    # add result items to workflow
     for gank in ganks:
         wf.add_item(title=gank['desc'],
                     subtitle=gank['who'],
