@@ -1,4 +1,7 @@
+![Github All Releases](https://img.shields.io/github/downloads/hujiaweibujidao/Gank-Alfred-Workflow/total.svg)
+
 # Gank Alfred Workflow
+
 >  The missing Alfred Workflow for searching ganks(干货) in gank.io
 
 干货搜索器，一个自制的Alfred Workflow，功能是搜索[gank.io](http://gank.io)中的干货！
